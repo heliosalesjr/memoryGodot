@@ -1,0 +1,11 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://c602npmrs5d3l"]
+
+[ext_resource type="FontFile" uid="uid://byk5pmbnhaafo" path="res://assets/fonts/gemunu-libre-v8-latin-700.ttf" id="1_sowee"]
+
+[resource]
+font = ExtResource("1_sowee")
+font_size = 32
+outline_size = 3
+outline_color = Color(0.054902, 0.054902, 0.054902, 1)
+shadow_size = 4
+shadow_offset = Vector2(3, 3)

@@ -1,2 +1,8 @@
+res://main_screen/main_screen.tscn
 res://master_scene/master_scene.tscn
+res://front_sprite/front_sprite.tscn
+res://master_scene.tscn
+res://front_sprite/front_sprite.gd
 res://singletons/image_manager.gd
+res://main_screen/level_button/level_button.tscn
+res://main_screen/level_button/level_button.gd

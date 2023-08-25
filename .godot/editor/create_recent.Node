@@ -1,2 +1,9 @@
+AudioStreamPlayer2D
+Label
+TextureButton
 TextureRect
+Control
+HBoxContainer
+VBoxContainer
+ColorRect
 CanvasLayer
