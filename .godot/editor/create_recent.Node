@@ -1,12 +1,12 @@
+TextureRect
+TextureButton
 AudioStreamPlayer
 Control
 Label
-TextureButton
 HBoxContainer
 VBoxContainer
 MarginContainer
 GridContainer
 AudioStreamPlayer2D
-TextureRect
 ColorRect
 CanvasLayer
