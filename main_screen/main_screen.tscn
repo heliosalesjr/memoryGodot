@@ -2,7 +2,7 @@
 
 [ext_resource type="FontFile" uid="uid://cl7l5s3bcvfwb" path="res://assets/fonts/LuckiestGuy-Regular.ttf" id="1_7oybp"]
 [ext_resource type="Script" path="res://main_screen/main_screen.gd" id="1_8jp66"]
-[ext_resource type="PackedScene" uid="uid://kuk3qd3j81yp" path="res://main_screen/level_button/level_button.tscn" id="2_7xcbr"]
+[ext_resource type="PackedScene" uid="uid://kuk3qd3j81yp" path="res://level_button/level_button.tscn" id="2_7xcbr"]
 [ext_resource type="PackedScene" uid="uid://5ha1r1nllu3t" path="res://front_sprite/front_sprite.tscn" id="2_rhelw"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_okkjd"]
