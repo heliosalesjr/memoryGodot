@@ -9,10 +9,30 @@ var FRAME_IMAGES: Array = [
 ]
 
 var _item_images: Array = []
+'''
+[
+	{ "item_name": "banana", "item_texture": CompTex2D  }
+]
+'''
 
-
+# Called when the node enters the scene tree for the first time.
 func _ready():
-	load_item_images()
+	#load_item_images()
+	
+	var ir: ImageFilesList = load("res://image_resources/ImageFilesList.tres")
+	for fn in ir.file_names:
+		add_file_to_list_2(fn)
+
+
+func add_file_to_list_2(fn: String) -> void:
+	
+	var ii_dict = {
+		"item_name": fn.rstrip(".png"),
+		"item_texture": load(fn)
+	}
+	
+	_item_images.append(ii_dict)
+
 
 func add_file_to_list(fn: String, path: String) -> void:
 	var full_path = path + "/" + fn
@@ -24,9 +44,9 @@ func add_file_to_list(fn: String, path: String) -> void:
 	
 	_item_images.append(ii_dict)
 
+
 func load_item_images() -> void:
 	
-	#the following vars are there so we can access the folder and files
 	var path = "res://assets/glitch"
 	var dir = DirAccess.open(path)
 	
@@ -37,12 +57,13 @@ func load_item_images() -> void:
 	var file_names = dir.get_files()
 	
 	for fn in file_names:
-			if ".import" not in fn:
-				add_file_to_list(fn, path)
-				
-	
+		if ".import" not in fn:
+			add_file_to_list(fn, path)
+
+
 func get_random_item_image() -> Dictionary:
 	return _item_images.pick_random()
+
 
 func get_image(index: int) -> Dictionary:
 	return _item_images[index]

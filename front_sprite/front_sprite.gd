@@ -1,5 +1,6 @@
 extends TextureRect
 
+
 const SCALE_SMALL: Vector2 = Vector2(0.1, 0.1)
 const SCALE_NORMAL: Vector2 = Vector2(1.0, 1.0)
 const SPIN_TIME_RANGE: Vector2 = Vector2(1.0, 2.0)
